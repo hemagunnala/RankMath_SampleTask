@@ -1,0 +1,50 @@
+@import '../../globalMixins.scss';
+
+.trade {
+    @include centerChild;
+    display: flex;
+
+    .buy {
+        .icon {
+            height: 3.2rem;
+            width: 3.2rem;
+            border-radius: 50%;
+            background-image: linear-gradient(0deg, #1d71f1 0%, #17c7fb 100%);
+            @include centerChild;
+        }
+    }
+
+    .sell {
+        .icon {
+            height: 3.2rem;
+            width: 3.2rem;
+            border-radius: 50%;
+            background-image: linear-gradient(0deg, #fa23a2 0%, #ff677c 100%);
+            @include centerChild;
+        }
+    }
+
+    .buy,
+    .sell {
+        width: 15rem;
+        height: 12rem;
+        background-color: #ffffff;
+        border-radius: 10px;
+        @include centerChild;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        transition: 1s;
+
+        &:hover {
+            background-color: #17c7fb;
+            cursor: pointer;
+        }
+    }
+
+    .title {
+        color: #4c5968;
+        font-weight: bold;
+        font-size: 2.4rem;
+    }
+}

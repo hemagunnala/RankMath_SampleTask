@@ -1,0 +1,108 @@
+@import '../../globalMixins.scss';
+
+.wallet {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 0 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__header {
+        .titleBar {
+            display: flex;
+            gap: 2.4rem;
+            align-items: center;
+        }
+
+        display: flex;
+        justify-content: space-between;
+
+        .icon {
+            height: 3.2rem;
+            width: 3.2rem;
+            border-radius: 50%;
+            background-image: linear-gradient(0deg, #ff8f17 0%, #ffc743 100%);
+            @include centerChild;
+        }
+
+        .title {
+            color: #4c5968;
+            font-weight: bold;
+            font-size: 1.6rem;
+        }
+
+        .subtitle {
+            color: #aeb8c4;
+            font-size: 1.2rem;
+            font-weight: bold;
+            align-self: center;
+        }
+    }
+
+    .combinedValue {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    &__value {
+        font-size: 2.4rem;
+        color: #4c5968;
+        font-weight: bold;
+    }
+
+    &__subvalue {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__value {
+            color: #aeb8c4;
+            font-weight: bold;
+            font-size: 1.6rem;
+        }
+
+        &__percentage {
+            padding: 0.4rem 0.8rem;
+            background-color: #ee225d;
+            color: #ffffff;
+            font-weight: bold;
+            border-radius: 20px;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__header,
+    &__value,
+    &__subvalue,
+    &__icon {
+        margin: 0 1.6rem;
+        margin-top: 1.2rem
+    }
+
+    &__icon {
+        cursor: pointer;
+        display: grid;
+        place-items: center;
+        margin-bottom: 1.2rem;
+
+        svg {
+            height: 2.4rem;
+        }
+    }
+
+    .extra {
+        display: flex;
+        @include centerChild;
+        justify-content: space-around;
+
+        &__trade {
+            background-color: #1d71f1;
+            border-radius: 1rem;
+            width: 15rem;
+            height: 12rem
+        }
+    }
+
+}

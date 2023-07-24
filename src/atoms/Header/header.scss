@@ -1,0 +1,45 @@
+    .header {
+        margin-top: 2rem;
+        margin-left: 2rem;
+        border-top-left-radius: 5rem;
+        border-top-right-radius: 5rem;
+        width: 90%;
+        background-color: #ffffff;
+        clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%, 28% 0%, 28% 33%, 72% 33%, 72% 0);
+        color: #434358;
+        font-size: 1.6rem;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        &__notch {
+            display: flex;
+            justify-content: space-between;
+
+            .time {
+                margin-left: 3.2rem;
+            }
+
+            .icons {
+                margin-right: 2.4rem;
+                display: flex;
+                gap: 0.4rem;
+            }
+
+        }
+
+        &__nav {
+            display: flex;
+            justify-content: space-around;
+
+            .title {
+                color: #4c5968;
+                font-weight: bold;
+            }
+
+            .navIcon {
+                cursor: pointer;
+            }
+        }
+    }

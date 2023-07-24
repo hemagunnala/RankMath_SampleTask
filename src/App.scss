@@ -1,0 +1,24 @@
+@import "./globalMixins.scss";
+
+.app {
+  @include centerChild;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.iphone {
+  position: relative;
+  height: 80rem;
+  width: 40rem;
+  background: linear-gradient(to right, #e5e9f277, #e5e9f277),
+    url("./assets/iphone.svg");
+  background-size: cover;
+  mask-image: url("./assets/iphone.svg");
+  -webkit-mask-image: url("./assets/iphone.svg");
+  mask-size: 100% 100%;
+  mask-position: top left;
+  display: grid;
+  gap: 1.6rem;
+}

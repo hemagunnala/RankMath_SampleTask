@@ -1,0 +1,77 @@
+.chart {
+    margin: 0 3.2rem;
+
+    .filter {
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            padding: 0.4rem 1.2rem;
+            color: #aeb8c4;
+            font-weight: bold;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+    }
+
+    .graph {
+        margin-top: 1.6rem;
+        background-color: #ffffff;
+        border-radius: 1rem;
+        position: relative;
+        height: 20rem;
+        font-weight: bold;
+        color: #9a9bb0;
+        font-size: 0.8rem;
+
+        .price_info_current {
+            bottom: 2rem;
+            left: 3.2rem;
+            color: #4c5968;
+            font-weight: bold;
+
+            .current {
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                border: 1px solid rgba(255, 193, 61, 0.26);
+                background-image: linear-gradient(-40deg, #ffc743 0%, #ff8f17 100%);
+            }
+
+        }
+
+        .price_info_lower {
+            left: 3.2rem;
+            top: 1.4rem;
+
+            .lower {
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background-color: #ef2755;
+            }
+        }
+
+        .price_info_higher {
+            right: 3.2rem;
+            top: 1.4rem;
+
+            .higher {
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background-color: #1ec070;
+            }
+        }
+
+        .price_info_current,
+        .price_info_lower,
+        .price_info_higher {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            z-index: 1;
+            gap: 0.4rem;
+        }
+    }
+}
